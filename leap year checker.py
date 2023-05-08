@@ -11,19 +11,22 @@ if year % 4 == 0:
 else:
     print(year, "is not a leap year")
 
-#  To be a leap year, the year must satisfy one of the following conditions:
+ """
+ To be a leap year, the year must satisfy one of the following conditions:
 
-# It is divisible by 4, but not by 100.
-# It is divisible by 400.
+It is divisible by 4, but not by 100.
+It is divisible by 400.
+"""
 
+"""
+Century years like (1900, 2000, 2100, 2200, 2300, 2400) are leap years if they are divisible by 400.
+Non-century years like (2004, 1947, 2024) are leap years if they are divisible by 4.
 
-
-# century lear like (1900, 2000, 2100, 2200, 2300, 2400)  %  400 = 0:
-# non century year like (2004,1947,2024) % 4 = 0  then leap year
-
-# 1900   = not divisible 
-# 2000 = divisible 
-# 2100 = not divisible 
-# 2200 = not
-# 2300 = not
-# 2400 = yes divible  
+Examples:
+- 1900 is not a leap year because it is not divisible by 400.
+- 2000 is a leap year because it is divisible by 400.
+- 2100 is not a leap year because it is not divisible by 400.
+- 2200 is not a leap year because it is not divisible by 400.
+- 2300 is not a leap year because it is not divisible by 400.
+- 2400 is a leap year because it is divisible by 400.
+"""
